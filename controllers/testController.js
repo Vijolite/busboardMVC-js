@@ -65,30 +65,3 @@ exports.getbusBoard = async (req, res) => {
 		data: busBoard,
 	});
 }
-
-// 	// const url = "https://api.tfl.gov.uk/StopPoint/Mode/bus/Disruption";
-
-// 	// const response = await fetch(url);
-// 	// const disruptionsResponse = await response.json();
-
-// 	// const disruptions = disruptionsResponse.map(
-// 	// 	dis => new Disruption(
-// 	// 		dis.commonName,
-// 	// 		dis.description,
-// 	// 		dis.fromDate,
-// 	// 		dis.toDate
-// 	// 	)
-// 	// );
-
-// 	// res.render('disruptionListView', {
-// 	// 	data: disruptions,
-// 	// });
-
-// 	let data = [
-// 		new Test('Test name', 12),
-// 		new Test('Second name', 13)
-// 	];
-// 	res.render('testView', {
-// 		data : data,
-// 	});
-// };
