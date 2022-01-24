@@ -1,0 +1,27 @@
+<!-- views/busListView.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Busses</title>
+</head>
+
+<body id="home">
+	<h1>Busses</h1>
+	
+	<ul>
+		<%
+			data.forEach((bus) => { %>
+			<li>
+				<h2>Bus to <%= bus.destinationName %></h2>
+				<p>Will come in <%= bus.timeToStation %> min</p>
+				
+				
+			</li>
+		<% });
+		%>
+	</ul>
+	
+</body>
+</html>
